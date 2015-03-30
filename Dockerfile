@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Nobuyuki Aoki "aokinobu@gmail.com"
 
-RUN apt-get update ##
+RUN apt-get update ### update 0330
 RUN apt-get -y install libapache2-mod-php5
 
 ADD run.sh /run.sh
