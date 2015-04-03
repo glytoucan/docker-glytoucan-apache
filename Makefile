@@ -4,6 +4,9 @@ build:
 run:
 	sudo docker.io run -d -h local.glytoucan-apache --link docker-virtuoso_bluetree:test.ts.glytoucan.org --name="glytoucan-apache" aoki/glytoucan-apache
 
+runtest:
+	sudo docker.io run -d -h local.glytoucan-apache  --name="glytoucan-apache" aoki/glytoucan-apache
+
 bash:
 	sudo docker.io run -d -h local.glytoucan-apache --link docker-virtuoso_bluetree:test.ts.glytoucan.org --name="glytoucan-apache" aoki/glytoucan-apache /bin/bash
 
